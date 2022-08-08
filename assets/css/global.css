@@ -39,6 +39,7 @@ html {
 /*---------- Clases globales ----------*/
 .container {
     padding: 20vmin 10vw;
+    overflow: hidden;
 }
 
 .fade-down {
