@@ -1,0 +1,145 @@
+/*---------- Variables ----------*/
+
+:root {
+    --aptitudes-card-border: #0C4160;
+    --first-background: #000e14;
+    --main-font-color: #C3CEDA;
+    --plain-text-font: 'Quicksand', sans-serif;
+    --second-background:  #0A0F13;
+    --second-font-color: #738FA7;
+    --subtittle-font: 'Titillium Web', sans-serif;
+    --subtittle-font-size: 3rem;
+    --third-background: #00111a;
+}
+
+
+/* ---------- Global configurations ---------- */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow: overlay;
+}
+
+/* ---------- Custom scroll bar ---------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393D47;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+/*---------- Clases globales ----------*/
+.container {
+    padding: 20vmin 10vw;
+}
+
+.fade-down {
+    opacity: 0;
+    position: relative;
+    top: -50px;
+}
+
+.fade-down-active {
+    opacity: 1;
+    top: 0;
+    transition: 1s linear;
+}
+
+.fade-left {
+    left: -50px;
+    opacity: 0;
+    position: relative;
+}
+
+.fade-left-active {
+    left: 0;
+    opacity: 1;
+    transition: 1s linear;
+}
+
+.fade-right {
+    opacity: 0;
+    position: relative;
+    right: -50px;
+}
+
+.fade-right-active {
+    opacity: 1;
+    right: 0;
+    transition: 1s linear;
+}
+
+.fade-up {
+    opacity: 0;
+    position: relative;
+    bottom: -50px;
+}
+
+.fade-up-active {
+    opacity: 1;
+    bottom: 0;
+    transition: 1s linear;
+}
+
+.first-background {
+    background: var(--first-background);
+}
+
+.first-to-second-background {
+    background: linear-gradient(var(--first-background), var(--second-background));
+    border: none;
+    height: 10vmin;
+    outline: none;
+    width: 100%;
+}
+
+.img-border {
+    border-radius: 4vmin;
+    box-shadow: -3px 2px 10px rgba(50, 50, 150, 1);
+}
+
+.main-font {
+    font-family: var(--plain-text-font);
+}
+
+.main-font-color {
+    color: var(--main-font-color);
+}
+
+.scale-transition {
+    transition: 1s;
+}
+
+.scale-transition:hover {
+    transform: scale(1.15);
+}
+
+.second-background {
+    background: var(--second-background);
+}
+
+.second-font-color {
+    color: var(--second-font-color);
+}
+
+.second-to-first-background {
+    background: linear-gradient(var(--second-background), var(--first-background));
+    border: none;
+    height: 10vmin;
+    outline: none;
+    width: 100%;
+}
+
+.tittle-font {
+    font-family: var(--subtittle-font);
+    font-size: var(--subtittle-font-size);
+    font-weight: 700;
+}

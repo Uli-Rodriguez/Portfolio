@@ -1,0 +1,68 @@
+/*---------- Expereiencia profesional ----------*/
+
+.experience {
+    background: var(--second-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__tittle {
+    margin-bottom: 20vmin;
+    text-align: center;
+}
+
+.proyect {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    width: 100%;
+}
+
+.proyect:not(:last-child) {
+    margin-bottom: 20vmin;
+}
+
+.proyect:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.proyect__img {
+    width: 60%;
+}
+
+.proyect__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto 0;
+    width: 30%;
+}
+
+.proyect__content__tittle {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.proyect__content__description {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.ptoyect__content__tech {
+    font-size: 1rem;
+}
+
+.proyect__content__button {
+    background: inherit;
+    border: 2px solid var(--second-font-color);
+    border-radius: 2vmin;
+    color: var(--second-font-color);
+    font-size: 1rem;
+    height: 3rem;
+    width: 100%;
+}
+
+.proyect__content__button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

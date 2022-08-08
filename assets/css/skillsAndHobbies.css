@@ -1,0 +1,49 @@
+/*---------- Aptitudes ----------*/
+
+.aptitudes {
+    background: var(--second-background);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.aptitudes__skills {
+    padding-top: 20vmin;
+}
+
+.aptitudes__hobbies {
+    padding-bottom: 20vmin;
+    padding-top: 20vmin;
+}
+
+.aptitudes__sub-tittle {
+    margin-bottom: 20vmin;
+    text-align: center;
+}
+
+.aptitudes__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vw;
+    justify-content: space-evenly;
+}
+
+.aptitudes__card {
+    border: 2px solid var(--aptitudes-card-border);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1rem;
+    height: 130px;
+    padding: .7rem;
+    width: 130px;
+}
+
+.aptitudes__card__logo {
+    align-self: center;
+    height: calc(100% - 1rem);
+    justify-self: center;
+    width: calc(100% - 1rem);
+}

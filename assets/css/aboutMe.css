@@ -1,0 +1,73 @@
+/*---------- Sobre mi ----------*/
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me__tittle {
+    text-align: center;
+    margin-bottom: 20vmin;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 3vh;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.profile__avatar {
+    background: url(../images/avatar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: -3px 2px 10px rgba(255, 255, 255, 1);
+    height: calc(40vmax - 10vw);
+    width: calc(40vmax - 10vw);
+}
+
+.profile__content {
+    font-size: 1.2rem;
+    width: calc(40vmax - 10vw);
+}
+
+.profile__content__text {
+    font-size: 1em;
+    line-height: 110%;
+    text-align: justify;
+}
+
+.profile__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 1em;
+}
+
+.profile__contact__item {
+    font-size: 1em;
+}
+
+.profile__contact__item__link {
+    display: flex;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.profile__contact__item__link:hover {
+    opacity: .5;
+    transform: scale(1.2);
+}
+
+.contact__link__img {
+    height: 1em;
+    margin-left: .3em;
+    position: relative;
+    top: .1em;
+}

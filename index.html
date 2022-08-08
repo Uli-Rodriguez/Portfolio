@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="icon" href="./assets/images/page__icon.svg">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Quicksand&family=Titillium+Web&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/global.css">
+        <link rel="stylesheet" href="./assets/css/navBar.css">
+        <link rel="stylesheet" href="./assets/css/banner.css">
+        <link rel="stylesheet" href="./assets/css/aboutMe.css">
+        <link rel="stylesheet" href="./assets/css/skillsAndHobbies.css">
+        <link rel="stylesheet" href="./assets/css/studies.css">
+        <link rel="stylesheet" href="./assets/css/codingExp.css">
+        <link rel="stylesheet" href="./assets/css/contactMe.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+    </head>
+    <body>
+        <header class="headerContainer fade-down">
+            <h1 class="logo"><img src="./assets/images/logo.png" alt="Logo" class="logo-img"></h1>
+            <nav class="menu">
+                <ul class="burger-menu">
+                    <span class="burger-menu__bar"></span>
+                    <span class="burger-menu__bar"></span>
+                    <span class="burger-menu__bar"></span>
+                </ul>
+                <ul class="menu__list">
+                    <li class="menu__item tittle-font main-font-color" id="navMainMenuContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link">Inicio</p>
+                        </div>
+                    </li>
+                    <li class="menu__item tittle-font main-font-color" id="navAboutMeContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link" id="navAboutMe">Sobre mi</p>
+                        </div>
+                    </li>
+                    <li class="menu__item tittle-font main-font-color" id="navSkillsContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link" id="navSkills">Skills</p>
+                        </div>
+                    </li>
+                    <li class="menu__item tittle-font main-font-color" id="navHobbiesContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link" id="navHobbies">Hobbies</p>
+                        </div>
+                    </li>
+                    <li class="menu__item tittle-font main-font-color" id="navStudiesContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link" id="navStudies">Formación</p>
+                        </div>
+                    </li>
+                    <li class="menu__item tittle-font main-font-color" id="navCodingExpContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link" id="navCodingExp">Proyectos</p>
+                        </div>
+                    </li>
+                    <li class="menu__item tittle-font main-font-color" id="navContactMeContainer">
+                        <div class="menu__item__container">
+                            <p class="menu__item__link" id="navContactMe">Contacto</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="banner" id="mainMenu">
+                <div class="banner__container">
+                    <p class="banner__tittle main-font-color"></p>
+                    <p class="banner__content main-font-color tittle-font"></p>
+                </div>
+            </section>
+            <section class="about-me main-font-color container first-background" id="aboutMe">
+                <h2 class="about-me__tittle tittle-font fade-up">Sobre mi</h2>
+                <section class="profile fade-up">
+                    <div class="profile__avatar"></div>
+                    <div class="profile__content">
+                        <p class="profile__content__text main-font-color main-font">
+                            Mi nombre es Ulises Rodriguez, tengo 19 años y soy de Argentina. Me apasiona la tecnología y la idea de hacer uso de la misma para mejorar la calidad de vida de las personas y brindarles una experiencia agradable. <br>
+                            Soy un estudiante autodidacta y, a lo largo de mis estudios, he pasado por distintos cursos y programas que podrás ver con mayor detalle en mi perfil de LinkedIn, también encontraras links a mis proyectos desarrollados hasta el momento (al menos los más relevantes) que te invito a que revises. Tanto los links a los proyectos mencionados como a mi perfil de LinkedIn los encontraras en esta página.
+                        </p>
+                        <ul class="profile__contact">
+                            <li class="profile__contact__item main-font">
+                                <a href="https://github.com/Uli-Rodriguez" class="profile__contact__item__link main-font-color" target="_blank">
+                                    Github
+                                    <img src="./assets/images/contactLink.png" alt="Contact Link" class="contact__link__img">
+                                </a>
+                            </li>
+                            <li class="profile__contact__item main-font">
+                                <a href="https://www.linkedin.com/in/ulises-rodriguez-541312206/" class="profile__contact__item__link main-font-color" target="_blank">
+                                    LinkedIn
+                                    <img src="./assets/images/contactLink.png" alt="Contact Link" class="contact__link__img">
+                                </a>
+                            </li>
+                            <li class="profile__contact__item main-font">
+                                <a href="https://drive.google.com/file/d/1Fywt3yBwz4Zw5ODxv6XgXDh5BQfClqiQ/view?usp=sharing" class="profile__contact__item__link main-font-color" target="_blank">
+                                    Curriculum
+                                    <img src="./assets/images/contactLink.png" alt="Contact Link" class="contact__link__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <div class="first-to-second-background"></div>
+            <section class="aptitudes second-font-color second-background">
+                <section class="aptitudes__skills" id="skills">
+                    <h2 class="aptitudes__sub-tittle tittle-font fade-up">Skills</h2>
+                    <ul class="aptitudes__list fade-up">
+                        <li class="aptitudes__card main-font scale-transition">
+                            HTML5
+                            <img src="./assets/images/html5_logo.png" alt="Logo HTML5" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            CSS3
+                            <img src="./assets/images/css3_logo.png" alt="Logo CSS3" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            JavaScript
+                            <img src="./assets/images/JavaScript_logo.png" alt="Logo JavaScript" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            Inglés
+                            <img src="./assets/images/English(UK)_logo.png" alt="Bandera del Reino Unido" class="aptitudes__card__logo">
+                        </li>
+                    </ul>
+                </section>
+                <section class="aptitudes__hobbies" id="hobbies">
+                    <h2 class="aptitudes__sub-tittle tittle-font fade-up">Hobbies</h2>
+                    <ul class="aptitudes__list fade-up">
+                        <li class="aptitudes__card main-font scale-transition">
+                            Running
+                            <img src="./assets/images/running_logo.png" alt="Icono de personas corriendo" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            Escuchar musica
+                            <img src="./assets/images/music_logo.png" alt="Icono de musica" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            Ver peliculas
+                            <img src="./assets/images/cinema_logo.png" alt="Logo de cine" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            Gaming
+                            <img src="./assets/images/gaming_logo.png" alt="Icono de videojuegos" class="aptitudes__card__logo">
+                        </li>
+                        <li class="aptitudes__card main-font scale-transition">
+                            Lectura
+                            <img src="./assets/images/readding_logo.png" alt="Icono de lectura" class="aptitudes__card__logo">
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <div class="second-to-first-background"></div>
+            <section class="training second-font-color container first-background" id="studies">
+                <h2 class="training__tittle tittle-font fade-up">Formación académica</h2>
+                <ul class="training__list fade-up">
+                    <li class="training__card main-font scale-transition">
+                        <img src="./assets/images/English(UK)_logo.png" alt="Bandera Inglesa (Reino Unido)" class="training__card__img">
+                        <div class="training__card__data">
+                            <p class="training__card__name">Diplomado superior de capacitación de Inglés</p>
+                            <p class="training__card__date">2018 - Brighton Institute</p>
+                        </div>
+                    </li>
+                    <li class="training__card main-font scale-transition">
+                        <img src="./assets/images/linkedin-learning-logo.svg" alt="Logo de LinkedIn  Learning" class="training__card__img">
+                        <div class="training__card__data">
+                            <p class="training__card__name">Capacitación en distintas areas informaticas</p>
+                            <p class="training__card__date">2022 - LinkedIn Learning</p>
+                        </div>
+                    </li>
+                    <li class="training__card main-font scale-transition">
+                        <img src="./assets/images/Instituto-de-Ciberdefensa-logo.png" alt="Logo del Instituto de Ciberdefensa" class="training__card__img">
+                        <div class="training__card__data">
+                            <p class="training__card__name">Diplomado en Seguridad Informática Ágil</p>
+                            <p class="training__card__date">2022 - Instituto de Ciberdefensa</p>
+                        </div>
+                    </li>
+                    <li class="training__card main-font scale-transition">
+                        <img src="./assets/images/Alura-logo.png" alt="Logo de Alura" class="training__card__img">
+                        <div class="training__card__data">
+                            <p class="training__card__name">Proyecto Oracle Next Education</p>
+                            <p class="training__card__date">En curso - Alura Latam</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div class="first-to-second-background"></div>
+            <section class="experience main-font-color container main-font second-background" id="codingExp">
+                <h2 class="experience__tittle tittle-font fade-up">Experiencia en programacion</h2>
+                <div class="proyect fade-left">
+                    <img src="./assets/images/Alura_Encoder.jpg" alt="Captura del Encriptador Alura" class="proyect__img img-border scale-transition">
+                    <div class="proyect__content">
+                        <h3 class="proyect__content__tittle">Encriptador de texto</h3>
+                        <p class="proyect__content__description">
+                            Encriptador de texto, solo admite letras mayúsculas y sin acentos. Primer desafío del proyecto Oracle Next Education (ONE) por parte de Alura Latam.
+                        </p>
+                        <p class="proyect__content__tech">
+                            Tecnologías: HTML5, CSS3, JavaScript.
+                        </p>
+                        <a href="https://github.com/Uli-Rodriguez/Challenge-Alura-Decoder.git" class="proyect__content__link" target="_blank">
+                            <button class="proyect__content__button scale-transition main-font">Repositorio</button>
+                        </a>
+                        <a href="https://uli-rodriguez.github.io/Challenge-Alura-Decoder/" class="proyect__content__link" target="_blank">
+                            <button class="proyect__content__button scale-transition main-font">Ver demo</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyect fade-right">
+                    <img src="./assets/images/Alura_Hangman.jpg" alt="Captura del juego del Ahorcado" class="proyect__img img-border scale-transition">
+                    <div class="proyect__content">
+                        <h3 class="proyect__content__tittle">Juego del Ahorcado</h3>
+                        <p class="proyect__content__description">
+                            Juego del ahorcado 9 intentos y con posibilidad de añadir palabras personalizadas (no más de 8 letras y sin acento o caracteres especiales). Segundo desafío del proyecto Oracle Next Education (ONE) por parte de Alura Latam.
+                        </p>
+                        <p class="proyect__content__tech">
+                            Tecnologías: HTML5, CSS3, JavaScript.
+                        </p>
+                        <a href="https://github.com/Uli-Rodriguez/Challenge-Alura-Hangman.git" class="proyect__content__link" target="_blank">
+                                <button class="proyect__content__button scale-transition main-font">Repositorio</button>
+                        </a>
+                        <a href="https://uli-rodriguez.github.io/Challenge-Alura-Hangman/" class="proyect__content__link" target="_blank">
+                            <button class="proyect__content__button scale-transition main-font">Ver demo</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyect fade-left">
+                    <img src="./assets/images/proyect_portfolio.jpg" alt="Captura del portafolio" class="proyect__img img-border scale-transition">
+                    <div class="proyect__content">
+                        <h3 class="proyect__content__tittle">Página portafolio</h3>
+                        <p class="proyect__content__description">
+                            Esta es mi página personal, ¡Probablemente la misma en la que estés leyendo esto! Este proyecto forma parte de un proyecto personal y del tercer desafió del proyecto Oracle Next Education (ONE) por parte de Alura Latam.
+                        </p>
+                        <p class="proyect__content__tech">
+                            Tecnologías: HTML5, CSS3, metodología BEM, JavaScript.
+                        </p>
+                        <a href="#" class="proyect__content__link" target="_blank">
+                            <button class="proyect__content__button scale-transition main-font">Repositorio</button>
+                        </a>
+                        <a href="#" class="proyect__content__link" target="_blank">
+                            <button class="proyect__content__button scale-transition main-font">Ver demo</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="second-to-first-background"></div>
+        <footer class="footerContainer container first-background" id="contactMe">
+            <section class="contact fade-up">
+                <img src="./assets/images/contact_img.jpg" alt="Imagen decorativa contacto" class="contact__img img-border">
+                <div class="contact__container">
+                    <h2 class="contact__tittle tittle-font">Contacto</h2>
+                    <p class="contact__description main-font">
+                        ¿Quieres contactarme? <br>
+                        Completa el siguiente formulario y me pondré en contacto con usted lo antes posible.
+                    </p>
+                    <form class="contact__form" action="https://formsubmit.co/uli.mati.ro@gmail.com" method="POST">
+                        <div class="contact__form__input-container main-font">
+                            <label for="name" class="contact__form__label">Nombre</label>
+                            <input type="text" class="contact__form__input main-font" required data-type="name" maxlength="51" pattern="^[a-zA-ZÁ-Ÿ\s]{1,50}$">
+                            <span class="contact__form__input-error"></span>
+                        </div>
+                        
+                        <div class="contact__form__input-container main-font">
+                            <label for="email" class="contact__form__label">Email</label>
+                            <input type="text" class="contact__form__input main-font" required data-type="email" name="email" pattern="^[\w\-_\.]+@([\w\-_]+\.)+[\w]{2,4}$">
+                            <span class="contact__form__input-error"></span>
+                        </div>
+
+                        <div class="contact__form__input-container main-font">
+                            <label for="subject" class="contact__form__label" name="_subject">Asunto</label>
+                            <input type="text" class="contact__form__input main-font" required data-type="subject" maxlength="51" pattern="^.{1,50}$">
+                            <span class="contact__form__input-error"></span>
+                        </div>
+
+                        <div class="contact__form__input-container main-font">
+                            <label for="message" class="contact__form__label">Mensaje</label>
+                            <textarea type="text" class="contact__form__input input-message main-font" required data-type="message" name="message" maxlength="301"></textarea>
+                            <span class="contact__form__input-error"></span>
+                        </div>
+
+                        <input type="submit" class="contact__form__submit main-font scale-transition">
+                        <!-- FormSubmit config -->
+                        <input type="hidden" name="_autoresponse" value="Gracias por su mensaje, me pondre en contacto lo antes posible">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </section>
+            <section class="copyright main-font">
+                <p class="copyright__text">Desarrollado por Ulises Rodríguez</p>
+                <p class="copyright__date">2022</p>
+            </section>
+        </footer>
+        <script type="module" src="./assets/js/animations.js"></script>
+        <script src="./assets/js/navLinks.js"></script>
+        <script type="module" src="./assets/js/formValidations.js"></script>
+    </body>
+</html>
