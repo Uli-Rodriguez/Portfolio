@@ -1,18 +1,21 @@
+/* Get all the inputs from the contact form */
 const inputBoxes = document.querySelectorAll(".contact__form__input");
 
-inputBoxes.forEach(inputBox => {
-    inputBox.addEventListener("blur", input => {
-        validate(input.target);
-    });
-})
+/* Validate each input when leave */
+export const formValidations = () => {
+    inputBoxes.forEach(inputBox => {
+        inputBox.addEventListener("blur", input => {
+            validate(input.target);
+        });
+    })
+}
 
-
+/* Get the type of the input, then chekc if it is valid */
 function validate(input) {
     const inputType = input.dataset.type;
     if(customErrors[inputType]) {
         customErrors[inputType](input);
     }
-    console.log(input.validity)
     if(input.validity.valid) {
         input.parentElement.classList.remove("contact__form__input-container-invalid");
         input.parentElement.querySelector(".contact__form__input-error").innerHTML = "";
@@ -22,6 +25,7 @@ function validate(input) {
     }
 }
 
+/* All posible error messages for the inputs */
 const errorMessages = {
     name: {
         valueMissing: "Por favor, ingrese su nombre",
@@ -41,16 +45,19 @@ const errorMessages = {
     }
 }
 
+/* All custom errors */
 const customErrors = {
     message: textarea => setTextareaCustomError(textarea),
 }
 
+/* All types of error we want to inform the user */
 const inputErrorTypes = [
     "valueMissing",
     "patternMismatch",
     "customError",
 ];
 
+/* Return an error message to the user, depending on the error type */
 function showError (inputType, input) {
     let message = "Ha ocurrido un error";
     inputErrorTypes.forEach(error => {
@@ -61,6 +68,7 @@ function showError (inputType, input) {
     return message;
 }
 
+/* Set a pattern validation for the textarea */
 function setTextareaCustomError(textarea) {
     let message = ""
     const regEx = /^.{1,300}$/

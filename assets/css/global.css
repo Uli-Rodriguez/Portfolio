@@ -144,3 +144,20 @@ html {
     font-size: var(--subtittle-font-size);
     font-weight: 700;
 }
+
+
+
+/*---------- Sweet alert css configurations ----------*/
+
+.sweetAlert__container {
+    border-radius: 4vmin;
+    box-shadow: -3px 2px 10px rgba(50, 50, 150, 1);
+}
+
+.sweetAlert__content {
+    font-family: var(--plain-text-font); 
+}
+
+.sweetAlert__confirm-button {
+    background: var(--aptitudes-card-border);
+}
